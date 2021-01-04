@@ -1,6 +1,6 @@
 const express = require('express')
-//const userRouter = require('./users/users-router')
-const session = require('express-session')
+const userRouter = require('./users/users-router')
+// const session = require('express-session')
 const authRouter = require('./auth/auth-router')
 const server = express();
 
@@ -19,9 +19,9 @@ const sessionConfig = {
 
 
 server.use(express.json());
-server.use(session(sessionConfig))
+// server.use(session(sessionConfig))
 server.use("/api/auth", authRouter)
-//server.use("/api/users", userRouter)
+server.use("/api/users", userRouter)
 
 
 
