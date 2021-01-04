@@ -9,7 +9,7 @@ server.use(express.json());
 server.use("/api/users", userRouter)
 
 
-server.get('/api', (req,res) => {
+server.get('/', (req,res) => {
     res.send("we are up and running")
 })
 
