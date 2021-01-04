@@ -1,5 +1,4 @@
 const express = require('express')
-const guideRouter = require('./guides/guides-router')
 const server = express();
 
 server.use(helmet())
