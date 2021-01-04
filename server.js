@@ -4,7 +4,7 @@ const helmet = require("helmet")
 const server = express();
 
 server.use(helmet())
-
+server.use("/api/users", userRouter)
 server.get('/', (req,res) => {
     res.send("we are up and running")
 })
