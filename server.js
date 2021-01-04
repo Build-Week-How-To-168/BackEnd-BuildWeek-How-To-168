@@ -16,13 +16,14 @@ const sessionConfig = {
     saveUninitialized: false
 }
 
+const server = express();
 server.use(express.json());
 server.use(session(sessionConfig))
 server.use("/api/auth", authRouter)
 server.use("/api/users", userRouter)
 
 
-const server = express();
+
 
 
 server.get('/', (req,res) => {
