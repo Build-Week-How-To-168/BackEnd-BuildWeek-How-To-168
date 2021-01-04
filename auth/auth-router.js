@@ -36,19 +36,19 @@ router.post('/login', (req, res) => {
     })
 })
 
-router.get('logout', (req, res) => {
-    if(req.session) {
-        req.session.destroy(err => {
-            if(err) {
-                res.send("You will be here forever")
-            } else {
-                res.send("You have successfully logged out")
-            }
-        })
-    } else {
-        res.end()
-    }
-})
+// router.get('logout', (req, res) => {
+//     if(req.session) {
+//         req.session.destroy(err => {
+//             if(err) {
+//                 res.send("You will be here forever")
+//             } else {
+//                 res.send("You have successfully logged out")
+//             }
+//         })
+//     } else {
+//         res.end()
+//     }
+// })
 
 function generateToken(user) {
 
