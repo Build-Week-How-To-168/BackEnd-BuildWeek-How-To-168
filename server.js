@@ -2,6 +2,7 @@ const express = require('express')
 const userRouter = require('./users/users-router')
 const session = require('express-session')
 const authRouter = require('./auth/auth-router')
+const server = express();
 
 
 const sessionConfig = {
@@ -16,7 +17,7 @@ const sessionConfig = {
     saveUninitialized: false
 }
 
-const server = express();
+
 server.use(express.json());
 server.use(session(sessionConfig))
 server.use("/api/auth", authRouter)
