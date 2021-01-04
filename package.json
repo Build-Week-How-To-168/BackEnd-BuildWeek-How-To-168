@@ -1,0 +1,24 @@
+{
+  "name": "backend-buildweek-how-to-168",
+  "version": "1.0.0",
+  "description": "How To API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Build-Week-How-To-168/BackEnd-BuildWeek-How-To-168.git"
+  },
+  "author": "Yasmani Castaneda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Build-Week-How-To-168/BackEnd-BuildWeek-How-To-168/issues"
+  },
+  "homepage": "https://github.com/Build-Week-How-To-168/BackEnd-BuildWeek-How-To-168#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
