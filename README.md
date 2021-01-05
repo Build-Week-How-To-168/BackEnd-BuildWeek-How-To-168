@@ -2,13 +2,10 @@
 
 General Guideline
 
-Guide 
+Guide Requirements
 
-- ID , unique , int
 - Title , string
 - body , string
-- likes , int
-- user_id , unique , int
 
 User Register
 - username , unique 
@@ -18,6 +15,7 @@ User Register
 - email , unique
 
 API Request Guide
+https://how-to-guides-api.herokuapp.com
 
 USER API GUIDE
 To get all users : /api/users/
