@@ -28,3 +28,25 @@ To get all guides: /api/guides/
 To add a guide : /api/guides/
 To update a guide: /api/guides/:id
 To delete a guide: /api/guides/:id
+
+REQUIREMENTS for Registration:
+
+-username
+-password
+-email
+-first name
+-last name
+
+
+Registration Endpoint:
+
+/api/auth/register
+
+REQUIREMENTS to Log in
+
+-Username
+-Password
+
+Login Endpoint:
+
+/api/auth/login
