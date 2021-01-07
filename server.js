@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const userRouter = require('./users/users-router')
 const guideRouter = require('./guides/guides-router')
 const session = require('express-session')
@@ -18,6 +19,7 @@ const sessionConfig = {
 }
 
 const server = express();
+server.use(cors())
 server.use(helmet())
 server.use(express.json());
 server.use(session(sessionConfig))
