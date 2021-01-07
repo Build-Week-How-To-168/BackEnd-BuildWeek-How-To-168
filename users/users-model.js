@@ -29,7 +29,7 @@ function update(id, changes) {
  async function add(user) {
     try{
         const [id] = await db("users").insert(user, "id")
-        return findById(id)
+        return findById({id})
     } catch(error) {
         throw error;
     }
