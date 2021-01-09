@@ -23,7 +23,7 @@ function findById(id) {
 }
 
 function update(id, changes) {
-    return db('users').where('id', id).update(changes).then((count) => (count > 0 ? get(id) : null));
+    return db('users').where('id', id).update(changes).where({id})
 }
 
  async function add(user) {

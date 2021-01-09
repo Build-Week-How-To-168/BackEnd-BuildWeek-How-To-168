@@ -28,7 +28,7 @@ server.use("/api/users", userRouter)
 server.use("/api/guides", guideRouter)
 
 server.get('/', (req,res) => {
-    res.send("We are up and running")
+    res.status(200).json("We are up and running")
     //Test if the server is working
 })
 

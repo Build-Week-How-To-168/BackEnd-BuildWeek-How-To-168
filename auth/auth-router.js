@@ -4,13 +4,13 @@ const bcrypt = require("bcryptjs")
 const jwt = require("jsonwebtoken")
 const secrets = require('../config/secrets')
 
-router.post('/register', async (req, res) => {
+router.post('/register',  (req, res) => {
     let user = req.body
     const hash = bcrypt.hashSync(user.password, 10)
     user.password = hash
     
     try {
-        const saved = await users.add(user)
+        const saved = users.add(user)
         res.status(201).json(saved)
     } catch (err) {
         console.log(err)
